@@ -1,0 +1,16 @@
+<launch>
+    <!-- Cria a tartaruga Donatelo -->
+  <node pkg="rosservice" name="cria_donatelo" type="rosservice"
+    args="call /spawn 5.5 3.0 0.0 donatelo"/>
+
+    <!-- Altera o rastro de Donatelo para roxo -->
+  <node pkg="rosservice" name="altera_donatelo" type="rosservice"
+    args="call --wait /donatelo/set_pen 132 84 166 8 'off'"/>
+
+    <!-- Movimenta a tartaruga -->
+  <node pkg="rostopic" name="move_donatelo" type="rostopic"
+    args="pub /donatelo/cmd_vel geometry_msgs/Twist -r 1
+          -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 0.8]'"/>
+</launch>
+
+

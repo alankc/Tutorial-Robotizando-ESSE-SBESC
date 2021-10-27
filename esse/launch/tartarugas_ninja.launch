@@ -1,0 +1,49 @@
+<launch>
+    <!-- Inclui launch que inicia simulador de tartaruga -->
+  <include file="$(find esse)/launch/sim_tartaruga.launch"/>
+    <!-- Inclui launch que cria Rafael -->
+  <include file="$(find esse)/launch/cria_tartaruga.launch">
+    <arg name="nome" value="rafael"/>
+    <arg name="vr" value="255"/>
+    <arg name="vd" value="38"/>
+    <arg name="az" value="28"/>
+    <arg name="x" value="3.0"/>
+    <arg name="y" value="6.0"/>
+  </include>
+    <!-- Inclui launch que cria Miquelangelo -->
+  <include file="$(find esse)/launch/cria_tartaruga.launch">
+    <arg name="nome" value="miquelangelo"/>
+    <arg name="vr" value="249"/>
+    <arg name="vd" value="109"/>
+    <arg name="az" value="62"/>
+    <arg name="x" value="8.5"/>
+    <arg name="y" value="6.0"/>
+  </include>
+    <!-- Inclui launch que cria Leonardo -->
+  <include file="$(find esse)/launch/cria_tartaruga.launch">
+    <arg name="nome" value="leonardo"/>
+    <arg name="vr" value="0"/>
+    <arg name="vd" value="170"/>
+    <arg name="az" value="230"/>
+    <arg name="x" value="3.0"/>
+    <arg name="y" value="0.5"/>
+  </include>
+    <!-- Inclui launch que cria Donatelo -->
+  <include file="$(find esse)/launch/cria_tartaruga.launch">
+    <arg name="nome" value="donatelo"/>
+    <arg name="vr" value="153"/>
+    <arg name="vd" value="90"/>
+    <arg name="az" value="160"/>
+    <arg name="x" value="8.5"/>
+    <arg name="y" value="0.5"/>
+  </include>
+    <!-- Inclui launch que cria Mestre Splinter -->
+  <include file="$(find esse)/launch/cria_tartaruga.launch">
+    <arg name="nome" value="splinter"/>
+    <arg name="vr" value="128"/>
+    <arg name="vd" value="128"/>
+    <arg name="az" value="128"/>
+  </include>
+</launch>
+
+

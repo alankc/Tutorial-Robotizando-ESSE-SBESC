@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- Inclui launch que inicia simulador de tartaruga -->
+  <include file="$(find esse)/launch/sim_tartaruga.launch"/>
+
+    <!-- Inclui launch que cria Donatelo -->
+  <include file="$(find esse)/launch/cria_donatelo.launch"/>
+
+</launch>
+
+

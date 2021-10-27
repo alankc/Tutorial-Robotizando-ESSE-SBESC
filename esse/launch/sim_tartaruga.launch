@@ -1,0 +1,10 @@
+<launch>
+    <!-- Inicia o turtle sim -->
+  <node pkg="turtlesim" name="simulador" type="turtlesim_node"
+        respawn="true" output="screen">
+    <!-- Defini os parametros para trocar o fundo -->
+    <param name="background_r" value="194"/>
+    <param name="background_g" value="178"/>
+    <param name="background_b" value="128"/>
+  </node>
+</launch>
