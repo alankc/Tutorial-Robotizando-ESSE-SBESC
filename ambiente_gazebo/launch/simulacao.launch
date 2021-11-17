@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <include file="$(find ambiente_gazebo)/launch/apenas_paredes.launch"/>
+  
+  <include file="$(find robo_description)/launch/spawn_robot.launch"/>
+  
+</launch>
