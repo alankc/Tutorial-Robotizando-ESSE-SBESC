@@ -9,7 +9,7 @@ project(robo_navegacao)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
-  laser_values
+
   rospy
 )
 

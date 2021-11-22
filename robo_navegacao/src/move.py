@@ -25,7 +25,7 @@ def move():
     vel_msg.linear.z = 0
     vel_msg.angular.x = 0
     vel_msg.angular.y = 0
-    vel_msg.angular.z = 0.8 # Velocidade angular (rad/s)
+    vel_msg.angular.z = 0.2 # Velocidade angular (rad/s)
     
     r = rospy.Rate(1) #atualização a cada 1s
     i = 0
