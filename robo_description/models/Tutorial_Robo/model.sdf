@@ -52,11 +52,11 @@
             <max>30</max>
             <resolution>0.1</resolution>
           </range>
-          <!-- <noise>
-            <type>Gaussian</type>
+          <noise>
+            <type>gaussian</type>
             <mean>0.0</mean>
             <stddev>0.01</stddev>
-          </noise> -->
+          </noise>
         </ray>
         <plugin name="hokuyo_node" filename="libgazebo_ros_laser.so">
           <robotNamespace></robotNamespace>
@@ -71,7 +71,6 @@
       <parent>link_0</parent>
       <child>hokuyo_link</child>
     </joint>
-
     <!-- FIM Hokuyo Laser -->
 
     <link name='link_0'> <!-- Chassi -->
@@ -583,13 +582,13 @@
       <updateRate>50</updateRate>
 
       <!-- Name of left joint, defaults to `left_joint` -->
-      <leftJoint>link_0_JOINT_1</leftJoint>
+      <leftJoint>link_0_JOINT_0</leftJoint>
 
       <!-- Name of right joint, defaults to `right_joint` -->
-      <rightJoint>link_0_JOINT_0</rightJoint>
+      <rightJoint>link_0_JOINT_1</rightJoint>
 
       <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
-      <wheelSeparation>0.5</wheelSeparation>
+      <wheelSeparation>0.6</wheelSeparation>
 
       <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
       <wheelDiameter>0.3</wheelDiameter>
